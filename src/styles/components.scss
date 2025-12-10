@@ -1,0 +1,201 @@
+@use './variables.scss' as *;
+
+// Button styles (can be used globally or scoped)
+.btn {
+  padding: 10px 20px;
+  border-radius: $radius-md;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all $transition-base;
+  border: none;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  &.btn-primary {
+    background-color: $primary;
+    color: $white;
+
+    &:hover:not(:disabled) {
+      background-color: $primary-hover;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $secondary;
+    color: $text-secondary;
+
+    &:hover:not(:disabled) {
+      background-color: $secondary-hover;
+    }
+  }
+
+  &.btn-danger {
+    background-color: $danger;
+    color: $white;
+
+    &:hover:not(:disabled) {
+      opacity: 0.9;
+    }
+  }
+
+  &.btn-outline {
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary;
+
+    &:hover:not(:disabled) {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+}
+
+// Form styles
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-weight: 500;
+  color: $text-secondary;
+  font-size: 0.875rem;
+
+  .required {
+    color: $danger;
+  }
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  padding: 10px 12px;
+  border: 1px solid $border-medium;
+  border-radius: $radius-md;
+  font-size: 1rem;
+  transition: border-color $transition-base;
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+    box-shadow: 0 0 0 3px $primary-shadow;
+  }
+
+  &.form-input-error {
+    border-color: $danger;
+  }
+}
+
+.form-textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form-select {
+  background-color: $white;
+  cursor: pointer;
+}
+
+.form-error {
+  color: $danger;
+  font-size: 0.875rem;
+}
+
+// Filter styles
+.table-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-input,
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid $border-medium;
+  border-radius: $radius-md;
+  font-size: 0.875rem;
+  background-color: $white;
+  cursor: pointer;
+}
+
+.filter-input {
+  flex: 1;
+  max-width: 300px;
+}
+
+// Table styles
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid $border-light;
+  border-radius: $radius-lg;
+}
+
+.table-header-cell {
+  position: relative;
+  background-color: $bg-secondary;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: $text-secondary;
+  border-bottom: 2px solid $border-light;
+  user-select: none;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  color: $text-tertiary;
+  font-size: 0.75rem;
+
+  &:hover {
+    color: $text-secondary;
+  }
+}
+
+.resize-handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  cursor: col-resize;
+  background-color: $resize-handle;
+  transition: background-color $transition-base;
+
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.table-row {
+  transition: background-color $transition-base;
+
+  &:hover {
+    background-color: $bg-secondary;
+  }
+
+  td {
+    padding: 12px;
+    border-bottom: 1px solid $border-light;
+    font-size: 0.875rem;
+  }
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: $text-tertiary;
+}

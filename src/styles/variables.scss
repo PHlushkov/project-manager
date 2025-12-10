@@ -1,0 +1,70 @@
+// Colors
+$primary: #3b82f6;
+$primary-hover: #2563eb;
+$secondary: #e5e7eb;
+$secondary-hover: #d1d5db;
+$success: #10b981;
+$danger: #ef4444;
+$warning: #f59e0b;
+
+// Text colors
+$text-primary: #111827;
+$text-secondary: #374151;
+$text-tertiary: #6b7280;
+
+// Background colors
+$bg-primary: #ffffff;
+$bg-secondary: #f9fafb;
+$bg-tertiary: #f3f4f6;
+$white: #ffffff;
+
+// Border colors
+$border-light: #e5e7eb;
+$border-medium: #d1d5db;
+$resize-handle: #e5e7eb;
+
+// Status colors (Projects)
+$status-active-bg: #d1fae5;
+$status-active-text: #065f46;
+$status-archived-bg: #e5e7eb;
+$status-archived-text: #374151;
+$status-planned-bg: #dbeafe;
+$status-planned-text: #1e40af;
+
+// Status colors (Tasks)
+$status-todo-bg: #fef3c7;
+$status-todo-text: #92400e;
+$status-in-progress-bg: #dbeafe;
+$status-in-progress-text: #1e40af;
+$status-done-bg: #d1fae5;
+$status-done-text: #065f46;
+
+// Shadow & Overlay colors
+$shadow-overlay: rgba(0, 0, 0, 0.5);
+$shadow-black-light: rgba(0, 0, 0, 0.05);
+$shadow-black-medium: rgba(0, 0, 0, 0.1);
+$primary-shadow: rgba(59, 130, 246, 0.1);
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 12px;
+$spacing-lg: 16px;
+$spacing-xl: 20px;
+$spacing-2xl: 24px;
+
+// Border radius
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-lg: 8px;
+$radius-xl: 12px;
+
+// Shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+// Transitions
+$transition-fast: 0.15s;
+$transition-base: 0.2s;
+$transition-slow: 0.3s;

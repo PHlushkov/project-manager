@@ -1,0 +1,56 @@
+{
+  "projects": [
+    {
+      "name": "Новий проект",
+      "description": "Проект тестовий",
+      "status": "active",
+      "id": "2e4afd3f-ba5b-45f1-9c1b-83bfae4a052c",
+      "createdAt": "2025-12-09T23:36:31.700Z"
+    },
+    {
+      "name": "Тест",
+      "description": "Тест",
+      "status": "active",
+      "id": "ee39fb06-7aac-43ac-8eb4-0d91d651d8c0",
+      "createdAt": "2025-12-10T23:16:36.114Z"
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Нове завдання",
+      "assignee": "Bob Williams",
+      "status": "todo",
+      "dueDate": "2025-12-11",
+      "projectId": "2e4afd3f-ba5b-45f1-9c1b-83bfae4a052c",
+      "id": "4a54f939-2422-48be-ac38-ce8135cefd41",
+      "order": 1
+    },
+    {
+      "title": "In progress",
+      "assignee": "Alice Johnson",
+      "status": "in_progress",
+      "dueDate": "2025-12-13",
+      "projectId": "2e4afd3f-ba5b-45f1-9c1b-83bfae4a052c",
+      "id": "e971576f-d575-44e6-8b0e-8bace83ceab3",
+      "order": 3
+    },
+    {
+      "title": "DOne",
+      "assignee": "Bob Williams",
+      "status": "done",
+      "dueDate": "2025-12-11",
+      "projectId": "2e4afd3f-ba5b-45f1-9c1b-83bfae4a052c",
+      "id": "e2c5900e-0092-4b60-9193-a6033d5af83f",
+      "order": 2
+    },
+    {
+      "title": "Test",
+      "assignee": "",
+      "status": "in_progress",
+      "dueDate": "2025-12-10",
+      "projectId": "2e4afd3f-ba5b-45f1-9c1b-83bfae4a052c",
+      "id": "1a58f5ba-1925-4fb8-8663-04189d944d91",
+      "order": 2
+    }
+  ]
+}
